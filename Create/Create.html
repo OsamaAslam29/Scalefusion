@@ -41,10 +41,11 @@
 
         <!-- ******************* Accordion ******************** -->
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'General')">General</button>
-            <button class="tablinks" onclick="openCity(event, 'Android')">Android</button>
-            <button class="tablinks" onclick="openCity(event, 'iOS')">iOS</button>
-            <button class="tablinks" onclick="openCity(event, 'Window 10')">Window 10</button>
+            <button class="tablinks mainTabsLinks" onclick="openMainTab(event, 'General')">General</button>
+            <button class="tablinks mainTabsLinks" id="android_btn"
+                onclick="openMainTab(event, 'Android')">Android</button>
+            <button class="tablinks mainTabsLinks" onclick="openMainTab(event, 'iOS')">iOS</button>
+            <button class="tablinks mainTabsLinks" onclick="openMainTab(event, 'Window 10')">Window 10</button>
         </div>
 
         <div id="General" class="tabcontent">
@@ -56,13 +57,13 @@
 
             <div class="android">
                 <div class="android_tab">
-                    <button class="tablinks" onclick="openCity(event, 'Basic')">Basic</button>
-                    <button class="tablinks" onclick="openCity(event, 'Advance')">Advance</button>
-                    <button class="tablinks" onclick="openCity(event, 'OEM SDK')">OEM SDK</button>
-                    <button class="tablinks" onclick="openCity(event, 'OEM SDK')">Alert Sounds</button>
+                    <button class="tablinks subTabLinks" onclick="openSubTab(event, 'Basic')">Basic</button>
+                    <button class="tablinks subTabLinks" onclick="openSubTab(event, 'Advance')">Advance</button>
+                    <button class="tablinks subTabLinks" onclick="openSubTab(event, 'OEM SDK')">OEM SDK</button>
+                    <button class="tablinks subTabLinks" onclick="openSubTab(event, 'OEM SDK')">Alert Sounds</button>
                 </div>
             </div>
-            
+
 
             <div id="Basic" class="android_tabcontent">
 
@@ -85,7 +86,7 @@
                                             enctype="multipart/form-data" name="myForm">
                                             <div class="upload" onclick="getFile()">
                                                 <img src="../Assets/upload.svg">
-                                                <div id="yourBtn" >Brand Logo <br>192x192
+                                                <div id="yourBtn">Brand Logo <br>192x192
                                                 </div>
                                                 <!-- this is your file input tag, so i hide it!-->
                                                 <!-- i used the onchange event to fire the form submission-->
@@ -95,12 +96,12 @@
                                                 <!-- <input type="submit" value='submit' > -->
                                             </div>
                                         </form>
-                                        
+
                                         <form action="#type your action here" method="POST"
                                             enctype="multipart/form-data" name="myForm">
                                             <div class="upload" onclick="getFile()">
                                                 <img src="../Assets/upload.svg">
-                                                <div id="yourBtn" >Lock Screen Logo <br> 256x256
+                                                <div id="yourBtn">Lock Screen Logo <br> 256x256
                                                 </div>
                                                 <!-- this is your file input tag, so i hide it!-->
                                                 <!-- i used the onchange event to fire the form submission-->
@@ -123,46 +124,47 @@
                             <div class="basic_heading">Upload Wallpaper</div>
                             <div class="checkbox">
                                 <input type="checkbox">
-                                <div class="label">Use same for Lock screen</div></div>
+                                <div class="label">Use same for Lock screen</div>
+                            </div>
                         </div>
-                            <div class="upload_card_vt">
-                                <form action="#type your action here" method="POST"
-                                    enctype="multipart/form-data" name="myForm">
-                                    <div class="upload" onclick="getFile()">
-                                        <img src="../Assets/upload.svg">
-                                        <div id="yourBtn" >Home Screen <br> Wallpaper <br> 2500x2500
-                                        </div>
-                                        <!-- this is your file input tag, so i hide it!-->
-                                        <!-- i used the onchange event to fire the form submission-->
-                                        <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile"
-                                                type="file" value="upload" onchange="sub(this)" /></div>
-                                        <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
-                                        <!-- <input type="submit" value='submit' > -->
+                        <div class="upload_card_vt">
+                            <form action="#type your action here" method="POST" enctype="multipart/form-data"
+                                name="myForm">
+                                <div class="upload" onclick="getFile()">
+                                    <img src="../Assets/upload.svg">
+                                    <div id="yourBtn">Home Screen <br> Wallpaper <br> 2500x2500
                                     </div>
-                                </form>
-                                
-                                <form action="#type your action here" method="POST"
-                                    enctype="multipart/form-data" name="myForm">
-                                    <div class="upload" onclick="getFile()">
-                                        <img src="../Assets/upload.svg">
-                                        <div id="yourBtn" >Lock Screen<br> Wallpaper <br> 2500x2500
-                                        </div>
-                                        <!-- this is your file input tag, so i hide it!-->
-                                        <!-- i used the onchange event to fire the form submission-->
-                                        <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile"
-                                                type="file" value="upload" onchange="sub(this)" /></div>
-                                        <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
-                                        <!-- <input type="submit" value='submit' > -->
+                                    <!-- this is your file input tag, so i hide it!-->
+                                    <!-- i used the onchange event to fire the form submission-->
+                                    <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile" type="file"
+                                            value="upload" onchange="sub(this)" /></div>
+                                    <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
+                                    <!-- <input type="submit" value='submit' > -->
+                                </div>
+                            </form>
+
+                            <form action="#type your action here" method="POST" enctype="multipart/form-data"
+                                name="myForm">
+                                <div class="upload" onclick="getFile()">
+                                    <img src="../Assets/upload.svg">
+                                    <div id="yourBtn">Lock Screen<br> Wallpaper <br> 2500x2500
                                     </div>
-                                </form>
-                            </div>
+                                    <!-- this is your file input tag, so i hide it!-->
+                                    <!-- i used the onchange event to fire the form submission-->
+                                    <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile" type="file"
+                                            value="upload" onchange="sub(this)" /></div>
+                                    <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
+                                    <!-- <input type="submit" value='submit' > -->
+                                </div>
+                            </form>
+                        </div>
 
-                            <div class="flex_heading2">
-                                <div class="basic_heading">Show device name</div>
-                                <div class="checkbox"><input type="checkbox"></div>
-                            </div>
+                        <div class="flex_heading2">
+                            <div class="basic_heading">Show device name</div>
+                            <div class="checkbox"><input type="checkbox"></div>
+                        </div>
 
-                       
+
                     </div>
                     <div class="footer_section">
                         <div class="flex_heading3">
@@ -211,17 +213,49 @@
     <!-- ******************* Javascript ********************** -->
 
     <script>
-        function openCity(evt, cityName) {
+        let default_active_tabs = document.getElementsByClassName("mainTabsLinks")
+        default_active_tabs[1].click()
+
+        let default_active_sub_tabs = document.getElementsByClassName("subTabLinks")
+        default_active_sub_tabs[0].click()
+
+        // let default_active_tab = document.getElementById("android_btn")
+        // default_active_tab.className += " active"
+        // let default_active_container = document.getElementById("Android")
+        // default_active_container.style.display = "block"
+        // let default_active_box = document.getElementById("Basic")
+        // default_active_box.style.display = "block"
+
+        function openMainTab(evt, cityName) {
             var i, tabcontent, tablinks;
+
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
+
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
+
             document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        function openSubTab(evt, subTab) {
+            var i, allSubTabsLinks, allSubTabs;
+
+            allSubTabs = document.getElementsByClassName("android_tabcontent");
+            for (i = 0; i < allSubTabs.length; i++) {
+                allSubTabs[i].style.display = "none";
+            }
+
+            allSubTabsLinks = document.getElementsByClassName("subTabLinks");
+            for (i = 0; i < allSubTabsLinks.length; i++) {
+                allSubTabsLinks[i].className = allSubTabsLinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(subTab).style.display = "block";
             evt.currentTarget.className += " active";
         }
     </script>

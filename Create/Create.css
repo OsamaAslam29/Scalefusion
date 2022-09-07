@@ -108,6 +108,8 @@
   border-radius: 0.5rem;
   background-color: white;
   border: none;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 
