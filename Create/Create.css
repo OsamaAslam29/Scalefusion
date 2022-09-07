@@ -54,76 +54,122 @@
     margin-right: 2rem;
 }
 
-/* ******************* Header ******************** */
-.bs-example{
-    margin: 20px;
-}
-a{
-    color: black;
-}
-body{
-    background-color: #F1F3F4;
-}
-.nav-tabs .nav-link{
+/* ******************* Accordin ******************** */
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color: white;
+    padding: 0rem 2rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
     border: none;
-    border-radius: 0;
-    cursor: pointer;
-    color: black;
-}
-.nav-tabs .nav-link.active{
-    border-bottom: 4px solid blue;
-}
-.tab-content{
-    width: 620px;
-    background-color: #ffffff;
-    border-radius: 8px;
-}
-#sectionA input{
-    width: 100%;
     outline: none;
-}
-/* /image-upload/ */
-.upload_card_vt{
+    cursor: pointer;
+    padding: 25px 30px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: rgb(94, 91, 91);
+
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgb(233, 233, 233);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    color: black;
+    border-bottom: 3px solid blue;
+  }
+
+  /* Style the Android tab content */
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    width: 50%;
+    height: 60vh;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: none;
+  }
+
+
+
+
+
+
+  .android{
     display: flex;
-}
-.pl-15{
-    padding-left: 15px;
-}
-.upload{
-    position: relative;
-    width: 125px;
-  height: 125px;
-  padding: 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border: 1px dashed #256BFF;
-  text-align: center;
-  background-color: #F6F9FB;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-}
-.upload img{
-    height: 16px;
-    width: 24px;
-    margin: 20px auto;
-}
-#yourBtn {
-  position: relative;
-  /*top: 150px;
-*/      font-family: calibri;
-  /*width: 125px;
-  height: 125px;*/
-  padding: 10px;
-  /*-webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border: 1px dashed #256BFF;
-  text-align: center;
-  background-color: #F6F9FB;
-  cursor: pointer;*/
-  font-size: 12px;
-  line-height: 150%;
-  color: #1A142C;
-  height: 60%;
-  align-items: flex-start;
-}
+    justify-content: center;
+  }
+  .android_tab{
+    width: 70%;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color: #E0E9FE;
+    border-radius: 5px;
+    margin: 1rem 0;
+    display: flex;
+    /* gap: 2rem; */
+    justify-content: space-around;
+
+  }
+  .sections{
+    padding: 0 1rem;
+  }
+  .basic_heading{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 135%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+  .select_color{
+    display: flex;
+    justify-content: space-between;
+  }
+  .android_tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 3px 5px;
+    padding: 7px 20px;
+    transition: 0.5s;
+    font-size: 13px;
+    color: rgb(94, 91, 91);
+  }
+
+  .android_tab button:hover {
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  /* Create an active/current tablink class */
+  .android_tab button.active {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+  
+  .android_tabcontent{
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    width: 100%;
+    height: 20vh;
+    border-radius: 5px;
+    background-color: white;
+  }
