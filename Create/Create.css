@@ -55,3 +55,75 @@
 }
 
 /* ******************* Header ******************** */
+.bs-example{
+    margin: 20px;
+}
+a{
+    color: black;
+}
+body{
+    background-color: #F1F3F4;
+}
+.nav-tabs .nav-link{
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    color: black;
+}
+.nav-tabs .nav-link.active{
+    border-bottom: 4px solid blue;
+}
+.tab-content{
+    width: 620px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+#sectionA input{
+    width: 100%;
+    outline: none;
+}
+/* /image-upload/ */
+.upload_card_vt{
+    display: flex;
+}
+.pl-15{
+    padding-left: 15px;
+}
+.upload{
+    position: relative;
+    width: 125px;
+  height: 125px;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px dashed #256BFF;
+  text-align: center;
+  background-color: #F6F9FB;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.upload img{
+    height: 16px;
+    width: 24px;
+    margin: 20px auto;
+}
+#yourBtn {
+  position: relative;
+  /*top: 150px;
+*/      font-family: calibri;
+  /*width: 125px;
+  height: 125px;*/
+  padding: 10px;
+  /*-webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px dashed #256BFF;
+  text-align: center;
+  background-color: #F6F9FB;
+  cursor: pointer;*/
+  font-size: 12px;
+  line-height: 150%;
+  color: #1A142C;
+  height: 60%;
+  align-items: flex-start;
+}
