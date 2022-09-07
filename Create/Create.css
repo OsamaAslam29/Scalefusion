@@ -258,15 +258,34 @@
 .flex_heading1{
   display: flex;
   justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
   margin-bottom: 1rem;
 }
 .flex_heading2{
   display: flex;
   justify-content: space-between;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+
+}
+.flex_heading3{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+
 }
 .third_section{
   border-bottom: 1px solid grey;
   padding-top: 1rem;
 
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+}
+.checkbox input{
+  height: 18px;
+  width: 18px;
 }
