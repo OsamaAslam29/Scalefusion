@@ -113,10 +113,7 @@
   overflow-y: scroll;
 }
 
-
-
-
-
+/* ******************* Android tab******************** */
 
 .android {
   display: flex;
@@ -148,14 +145,17 @@
   color: rgb(94, 91, 91);
 }
 
+.android_tab button.active {
+  color: black;
+}
  
-
 .android_tab button:hover {
   border-radius: 5px;
   background-color: white;
 }
 
 /* Create an active/current tablink class */
+
 .android_tab button.active {
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
@@ -273,7 +273,6 @@
 .flex_heading1 {
   display: flex;
   justify-content: space-between;
-  /* justify-content: center; */
   align-items: center;
   margin-bottom: 1rem;
 }
@@ -310,12 +309,13 @@
   width: 18px;
 }
 
-
-
 /* ******************* Advance Tab inside Android tab ******************** - */
+
 .advance_container {
   padding: 0 .5rem;
 }
+
+/* ************************************** */
 
 .advance_first_part {
   display: flex;
@@ -337,6 +337,7 @@
 }
 
 /* ************************************** */
+
 
 .advance_second_part {
   display: flex;
@@ -583,6 +584,7 @@
   text-decoration: none;
   color: #0754fa;
 }
+/* ************************************** */
 
 .oem_first {
   padding: 0 20px;
@@ -590,6 +592,8 @@
   flex-direction: column;
   gap: 1rem;
 }
+
+/* ************************************** */
 
 .oem_second_part {
   display: flex;
@@ -609,11 +613,15 @@
   font-weight: 600;
 }
 
+/* ************************************** */
+
 .third_part {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
+/* ************************************** */
 
 .fifth_part {
   display: flex;
@@ -628,6 +636,8 @@
   align-items: center;
   color: #000000;
 }
+
+/* ************************************** */
 
 .o_input input {
 
