@@ -112,7 +112,9 @@
   overflow: hidden;
   overflow-y: scroll;
 }
-
+.tabcontent::-webkit-scrollbar {
+  display: none;
+}
 /* ******************* Android tab******************** */
 
 .android {
