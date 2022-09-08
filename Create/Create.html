@@ -64,8 +64,7 @@
                     <button class="tablinks subTabLinks" onclick="openSubTab(event, 'Basic')">Basic</button>
                     <button class="tablinks subTabLinks" onclick="openSubTab(event, 'Advance')">Advance</button>
                     <button class="tablinks subTabLinks" onclick="openSubTab(event, 'OEM SDK')">OEM SDK</button>
-                    <button class="tablinks subTabLinks" onclick="openSubTab(event, 'Alert Sounds')">Alert
-                        Sounds</button>
+                    <button class="tablinks subTabLinks" onclick="openSubTab(event, 'Alert Sounds')">Alert Sounds</button>
                 </div>
             </div>
 
@@ -73,22 +72,21 @@
 
             <div id="Basic" class="android_tabcontent">
 
-                <div class="sections">
-                    <div class="fisrt_section">
+            <div class="sections">
+            <div class="fisrt_section">
                         <div class="basic_heading">Top Bar Color</div>
                         <div class="select_color">
                             <div class="color"><input type="color"></div>
                             <div class="color_link"><a href="/"> (Change) </a></div>
                         </div>
-                    </div>
+                </div>
                     <div class="second_section">
                         <div class="basic_heading">Upload Logo</div>
-                        <div class="upload_file">
-                            <div class="tab-content">
+                          <div class="upload_file">
+                             <div class="tab-content">
                                 <div id="sectionC" class="tab-pane fade">
-
-                                    <div class="upload_card_vt">
-                                        <form action="#type your action here" method="POST"
+                                   <div class="upload_card_vt">
+                                      <form action="#type your action here" method="POST"
                                             enctype="multipart/form-data" name="myForm">
                                             <div class="upload" onclick="getFile()">
                                                 <img src="../Assets/upload.svg">
@@ -102,7 +100,6 @@
                                                 <!-- <input type="submit" value='submit' > -->
                                             </div>
                                         </form>
-
                                         <form action="#type your action here" method="POST"
                                             enctype="multipart/form-data" name="myForm">
                                             <div class="upload" onclick="getFile()">
@@ -121,14 +118,11 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                     <div class="third_section">
                         <div class="flex_heading1">
                             <div class="basic_heading">Upload Wallpaper</div>
-                            <div class="checkbox">
+                               <div class="checkbox">
                                 <input type="checkbox">
                                 <div class="label">Use same for Lock screen</div>
                             </div>
@@ -148,8 +142,7 @@
                                     <!-- <input type="submit" value='submit' > -->
                                 </div>
                             </form>
-
-                            <form action="#type your action here" method="POST" enctype="multipart/form-data"
+                          <form action="#type your action here" method="POST" enctype="multipart/form-data"
                                 name="myForm">
                                 <div class="upload" onclick="getFile()">
                                     <img src="../Assets/upload.svg">
@@ -179,10 +172,7 @@
                         </div>
                     </div>
 
-                </div>
-
-
-
+            </div>
 
             </div>
 
@@ -288,7 +278,10 @@
                         <div class="oem_heading">Lenovo & Acer Devices</div>
                         <div class="alert_box">
                             <div class="alert_logo"><img src="../Assets/Alert/info.svg" alt=""></div>
-                            <p>Note: These are OEM/Device specific settings and works with Lenovo & Acer devices only. For Acer this feature works only on Acer One 8 T4-82L. <a href="https://android.googlesource.com/platform/frameworks/base/+/master/cmds/bootanimation/FORMAT.md">Get help
+                            <p>Note: These are OEM/Device specific settings and works with Lenovo & Acer devices only.
+                                For Acer this feature works only on Acer One 8 T4-82L. <a
+                                    href="https://android.googlesource.com/platform/frameworks/base/+/master/cmds/bootanimation/FORMAT.md">Get
+                                    help
                                 </a> to generate zip animation file. <br>Animation once applied can be replaced from
                                 device and cannot be removed.</p>
                         </div>
@@ -332,7 +325,9 @@
                             <div class="alert_box">
                                 <div class="alert_logo"><img src="../Assets/Alert/info.svg" alt=""></div>
                                 <p>Note: These are OEM/Device specific settings and works with Samsung devices with Knox
-                                   v2.6 or later only. <a href="https://docs.samsungknox.com/dev/knox-sdk/create-custom-animations.htm">Get help </a> to generate animation files and
+                                    v2.6 or later only. <a
+                                        href="https://docs.samsungknox.com/dev/knox-sdk/create-custom-animations.htm">Get
+                                        help </a> to generate animation files and
                                     audio files.</p>
                             </div>
                         </div>
@@ -439,7 +434,8 @@
                     <div class="alert_heading">Configure Alert Sounds </div>
                     <div class="alert_box">
                         <div class="alert_logo"><img src="../Assets/Alert/info.svg" alt=""></div>
-                        <p>Note: These sounds will be used to alert the user. This depends on if they can be downloaded to the device and the format is compatible.</p>
+                        <p>Note: These sounds will be used to alert the user. This depends on if they can be downloaded
+                            to the device and the format is compatible.</p>
                     </div>
                     <div class="upload_images">
                         <div class="upload_card_vt">
@@ -525,30 +521,32 @@
         let default_active_sub_tabs = document.getElementsByClassName("subTabLinks")
         default_active_sub_tabs[0].click()
 
-        // let default_active_tab = document.getElementById("android_btn")
-        // default_active_tab.className += " active"
-        // let default_active_container = document.getElementById("Android")
-        // default_active_container.style.display = "block"
-        // let default_active_box = document.getElementById("Basic")
-        // default_active_box.style.display = "block"
+        // ************************** JS function for Accordian *********************
 
-        function openMainTab(evt, cityName) {
+        function openMainTab(evt, Tabs) {
+
             var i, tabcontent, tablinks;
 
             tabcontent = document.getElementsByClassName("tabcontent");
+
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
 
             tablinks = document.getElementsByClassName("tablinks");
+
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
 
-            document.getElementById(cityName).style.display = "block";
+            document.getElementById(Tabs).style.display = "block";
             evt.currentTarget.className += " active";
         }
+
+        // ************************** JS function for Sub Tabs *********************
+
         function openSubTab(evt, subTab) {
+
             var i, allSubTabsLinks, allSubTabs;
 
             allSubTabs = document.getElementsByClassName("android_tabcontent");
@@ -564,23 +562,10 @@
             document.getElementById(subTab).style.display = "block";
             evt.currentTarget.className += " active";
         }
+
     </script>
-    <!-- <script>
-        function openCity(evt, cityName) {
-          var i, android_tabcontent, tablinks;
-          android_tabcontent = document.getElementsByClassName("android_tabcontent");
-          for (i = 0; i < android_tabcontent.length; i++) {
-            android_tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-    </script> -->
 </body>
+
 
 <!-- ******************** Javascript for upload image **************** -->
 <script>
@@ -589,6 +574,7 @@
     }
 
     function sub(obj) {
+
         var file = obj.value;
         var fileName = file.split("\\");
         document.getElementById("upload").innerHTML = fileName[fileName.length - 1];
