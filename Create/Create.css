@@ -180,16 +180,19 @@
   align-items: center;
   color: #000000;
 }
-.fisrt_section{
+
+.fisrt_section {
   border-bottom: 1px solid rgb(226, 226, 226);
 
 }
+
 .select_color {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
 }
-.color input{
+
+.color input {
   height: 30px;
   width: 30px;
   border: none;
@@ -209,11 +212,12 @@
 }
 
 /* ******************************* */
-.second_section{
+.second_section {
   border-bottom: 1px solid rgb(226, 226, 226);
   padding-top: 1rem;
 
 }
+
 .upload_card_vt {
   display: flex;
   margin: 1rem 0;
@@ -263,37 +267,219 @@
   display: flex;
   flex-direction: column;
 }
-.flex_heading1{
+
+.flex_heading1 {
   display: flex;
   justify-content: space-between;
   /* justify-content: center; */
   align-items: center;
   margin-bottom: 1rem;
 }
-.flex_heading2{
+
+.flex_heading2 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 
 }
-.flex_heading3{
+
+.flex_heading3 {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
 
 }
-.third_section{
-  border-bottom: 1px solid grey;
+
+.third_section {
+  border-bottom: 1px solid rgb(214, 214, 214);
   padding-top: 1rem;
 
 }
-.checkbox{
+
+.checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: .7rem;
 }
-.checkbox input{
+
+.checkbox input {
   height: 18px;
   width: 18px;
+}
+
+
+
+/* ******************* Advance Tab inside Android tab ******************** - */
+.advance_container {
+  padding: 0 .5rem;
+}
+
+.advance_first_part {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.a_heading {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.a_icons img {
+  padding: 0 20px;
+
+}
+
+/* ************************************** */
+
+.advance_second_part {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 1px solid rgb(214, 214, 214);
+
+}
+
+/* ************************************** */
+
+.advance_third_part {
+  padding: 21px 0;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.advance_color_selector {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.advance_color input {
+  border: none;
+  height: 30px;
+  width: 30px;
+}
+
+/* ************************************** */
+
+.advance_forth_part {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.input_number input {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #b1bace;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 5px;
+  outline: none;
+}
+
+/* ************************************** */
+.advance_fifth_part {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 1px solid rgb(214, 214, 214);
+
+}
+
+/* ************************************** */
+.advance_sixth_part {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(214, 214, 214);
+
+}
+
+.flx_sixth {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.advance_sixth_part p {
+  color: #4c4c4c;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* ************************************** */
+
+.advance_seventh_part {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(214, 214, 214);
+
+}
+
+.flx_seventh {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.advance_seventh_part p {
+  color: #4c4c4c;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* ************************************** */
+.advance_eight_part {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px 0;
+
+}
+
+.flx_eight_part {
+  padding: 0 0 0 15px;
+}
+
+.flx_eight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.m_heading {
+  font-size: 16px;
+  font-weight: 500 !important;
+  color: #1A142C;
+}
+
+#option {
+  max-height: 40px;
+  border: 1px solid #bac3d8;
+  border-radius: 4px;
+  padding: 7px 10px;
+  color: #6f6f6f;
+  font-weight: 430;
+  outline: navajowhite;
+}
+
+.m_heading span {
+  color: #4c4c4c;
+  font-size: 14px;
+  font-weight: 430;
+}
+
+.l_heading {
+  font-size: 16px;
+  font-weight: 500 !important;
+  color: #1A142C;
+  margin-top: -15px;
 }
