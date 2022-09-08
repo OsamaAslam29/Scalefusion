@@ -64,7 +64,7 @@
                     <button class="tablinks subTabLinks" onclick="openSubTab(event, 'Basic')">Basic</button>
                     <button class="tablinks subTabLinks" onclick="openSubTab(event, 'Advance')">Advance</button>
                     <button class="tablinks subTabLinks" onclick="openSubTab(event, 'OEM SDK')">OEM SDK</button>
-                    <button class="tablinks subTabLinks" onclick="openSubTab(event, 'OEM SDK')">Alert Sounds</button>
+                    <button class="tablinks subTabLinks" onclick="openSubTab(event, 'Alert Sounds')">Alert Sounds</button>
                 </div>
             </div>
 
@@ -235,7 +235,6 @@
                      </div>
                      <p>Hide top bar and Device Name will not display on the device.</p>
                     </div>
-
                     <div class="advance_eight_part"> 
                         <div class="a_heading">App Icons Per Row</div>
                             <div class="flx_eight_part">
@@ -277,17 +276,84 @@
         <!-- ******************* OEM Tab inside Android tab ******************** -->
 
             <div id="OEM SDK" class="android_tabcontent">
-                <h3>OEM SDK</h3>
-                <p>London is the capital city of England.</p>
+                <div class="oem_container">
+                    <div class="oem_heading">
+                        <p>Boot and Shutdown Animation</p> 
+                            <img src="../Assets/oem/leno.png" alt="">
+                            <img src="../Assets/oem/sam.png" alt="">
+                            <img src="../Assets/oem/acer.svg" alt="">    
+                    </div>
+                    <div class="oem_first">
+                        <div class="oem_heading">Lenovo & Acer Devices</div>
+                        <div class="alert_box">
+                            <div class="alert_logo"><img src="../Assets/Alert/info.svg" alt=""></div>
+                            <p>Note: These are OEM/Device specific settings and works with Lenovo & Acer devices only.<br> For Acer this feature works only on Acer One 8 T4-82L. <a href="/">Get help </a> to generate zip animation <br>file. <br>Animation once applied can be replaced from device and cannot be removed.</p>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
 
         <!-- ******************* Alert Tab inside Android tab ******************** -->
 
             <div id="Alert Sounds" class="android_tabcontent">
-                <h3>Alert Sounds</h3>
-                <p>Alert Sounds is the capital city of England.</p>
-            </div>
+                <div class="alert_container">
+                    <div class="alert_heading">Configure Alert Sounds </div>
+                    <div class="alert_box">
+                        <div class="alert_logo"><img src="../Assets/Alert/info.svg" alt=""></div>
+                        <p>Note: These sounds will be used to alert the user. This depends on if they can be downloaded to the device and the format is compatible.</p>
+                    </div>
+                    <div class="upload_images">
+                        <div class="upload_card_vt">
+                            <form action="#type your action here" method="POST"
+                                enctype="multipart/form-data" name="myForm">
+                                <div class="upload" onclick="getFile()">
+                                    <img src="../Assets/upload.svg">
+                                    <div id="yourBtn">Upload Buzz alert <br> sound file (*.ogg)
+                                    </div>
+                                    <!-- this is your file input tag, so i hide it! -->
+                                    <!-- i used the onchange event to fire the form submission-->
+                                    <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile"
+                                            type="file" value="upload" onchange="sub(this)" /></div>
+                                    <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
+                                    <!-- <input type="submit" value='submit' > -->
+                                </div>
+                            </form>
 
+                            <form action="#type your action here" method="POST"
+                                enctype="multipart/form-data" name="myForm">
+                                <div class="upload" onclick="getFile()">
+                                    <img src="../Assets/upload.svg">
+                                    <div id="yourBtn">Upload Broadcast <br> message alert <br> sound file (*.ogg)
+                                    </div>
+                                    <!-- this is your file input tag, so i hide it!-->
+                                    <!-- i used the onchange event to fire the form submission-->
+                                    <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile"
+                                            type="file" value="upload" onchange="sub(this)" /></div>
+                                    <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
+                                    <!-- <input type="submit" value='submit' > -->
+                                </div>
+                            </form>
+                            <form action="#type your action here" method="POST"
+                                enctype="multipart/form-data" name="myForm">
+                                <div class="upload" onclick="getFile()">
+                                    <img src="../Assets/upload.svg">
+                                    <div id="yourBtn">Upload Workflow <br> alert sound file br (*.ogg)
+                                    </div>
+                                    <!-- this is your file input tag, so i hide it!-->
+                                    <!-- i used the onchange event to fire the form submission-->
+                                    <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile"
+                                            type="file" value="upload" onchange="sub(this)" /></div>
+                                    <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
+                                    <!-- <input type="submit" value='submit' > -->
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
 
 
         </div>
