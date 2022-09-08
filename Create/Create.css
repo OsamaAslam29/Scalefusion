@@ -483,3 +483,23 @@
   color: #1A142C;
   margin-top: -15px;
 }
+
+.advance_button button{
+  width: 100%;
+  color: #fff;
+  background-color: #256BFF;
+  height: 42px;
+  padding: 6px 15px;
+  border-radius: 2px;
+  border: navajowhite;
+  outline: none;
+  font-size: 15px !important;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  transition: 0.2s linear;
+  
+}
+.advance_button button:hover{
+  background-color: #0754fa;
+
+}
